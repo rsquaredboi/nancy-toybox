@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nancy Universe — Toybox</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Inter+Tight:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --cream:#FBF4EA; --ink:#221A2B; --muted:#5C5260; --accent:#F0338D; }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--cream); color:var(--ink); font-family:"Inter Tight",system-ui,sans-serif; }
+  header { padding:clamp(2.5rem,6vw,5rem) clamp(1.25rem,5vw,4rem) 1.5rem; }
+  h1 { font-family:"Playfair Display",Georgia,serif; font-weight:500; font-size:clamp(2.4rem,6vw,4.6rem); line-height:1.02; }
+  h1 em { font-style:italic; color:var(--accent); }
+  .sub { margin-top:.9rem; color:var(--muted); max-width:52ch; font-size:clamp(.95rem,1.3vw,1.1rem); line-height:1.5; }
+  nav { display:flex; flex-wrap:wrap; gap:.5rem; padding:0 clamp(1.25rem,5vw,4rem) 1.5rem; }
+  .pill { border:1px solid color-mix(in srgb,var(--ink) 25%,transparent); background:transparent; color:var(--muted);
+    padding:.55rem 1rem; border-radius:999px; font:600 .8rem/1 "Inter Tight",sans-serif; letter-spacing:.08em;
+    text-transform:uppercase; cursor:pointer; }
+  .pill:hover { color:var(--ink); }
+  .pill.active { background:var(--ink); border-color:var(--ink); color:var(--cream); }
+  .grid { columns:3 340px; column-gap:1.25rem; padding:0 clamp(1.25rem,5vw,4rem) 3rem; }
+  .card { break-inside:avoid; margin:0 0 1.25rem; background:#fff; border-radius:14px; overflow:hidden;
+    box-shadow:0 1px 2px rgba(34,26,43,.08), 0 8px 24px rgba(34,26,43,.06); }
+  .card img { width:100%; height:auto; display:block; }
+  .card.hidden { display:none; }
+  figcaption { padding:.85rem 1rem 1rem; font-size:.85rem; line-height:1.45; color:var(--muted); }
+  .tag { display:inline-block; margin-right:.55rem; color:var(--accent); font-weight:600; font-size:.7rem;
+    letter-spacing:.12em; text-transform:uppercase; }
+  footer { padding:0 clamp(1.25rem,5vw,4rem) 3rem; color:var(--muted); font-size:.85rem; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Nancy Universe <em>Toybox</em></h1>
+  <p class="sub">Toybox Surrealism, 22 concept frames. Bubblegum pink, butter yellow, sky blue. Joyful, glossy, immaculately made. A thesis for the world Nancy is building, not a spec.</p>
+</header>
+<nav><button class="pill active" data-filter="all">All</button><button class="pill" data-filter="Objects">Objects</button><button class="pill" data-filter="Silk">Silk</button><button class="pill" data-filter="Spaces">Spaces</button><button class="pill" data-filter="Culture">Culture</button><button class="pill" data-filter="Worlds">Worlds</button></nav>
+<main class="grid">
+      <figure class="card" data-spoke="Objects">
+        <a href="img/A1b-candyplinth.jpg" target="_blank" rel="noopener"><img src="img/A1b-candyplinth.jpg" alt="A1b-candyplinth" loading="lazy"></a>
+        <figcaption><span class="tag">Objects</span>Glossy bubblegum blob sculpture on a butter-yellow pedestal, sky-blue seamless, hard sunny shadow.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Objects">
+        <a href="img/A2b-gumball.jpg" target="_blank" rel="noopener"><img src="img/A2b-gumball.jpg" alt="A2b-gumball" loading="lazy"></a>
+        <figcaption><span class="tag">Objects</span>Giant gumball machine dispensing pastel blob objects like toys, chrome flap, bright studio.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Objects">
+        <a href="img/A3b-picnic.jpg" target="_blank" rel="noopener"><img src="img/A3b-picnic.jpg" alt="A3b-picnic" loading="lazy"></a>
+        <figcaption><span class="tag">Objects</span>Pink object on a gingham picnic blanket among peaches, cake and lemonade, harsh midday sun.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Objects">
+        <a href="img/A4b-inflatable.jpg" target="_blank" rel="noopener"><img src="img/A4b-inflatable.jpg" alt="A4b-inflatable" loading="lazy"></a>
+        <figcaption><span class="tag">Objects</span>Aerial: giant inflatable pink blob floating in a turquoise pool, one swimmer on a yellow float.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Objects">
+        <a href="img/A5b-claw.jpg" target="_blank" rel="noopener"><img src="img/A5b-claw.jpg" alt="A5b-claw" loading="lazy"></a>
+        <figcaption><span class="tag">Objects</span>Arcade claw machine full of plush pink blob toys, chrome claw descending, blank pink cabinet.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Objects">
+        <a href="img/A6b-sprinkles.jpg" target="_blank" rel="noopener"><img src="img/A6b-sprinkles.jpg" alt="A6b-sprinkles" loading="lazy"></a>
+        <figcaption><span class="tag">Objects</span>Object on a cake stand showered with rainbow sprinkles frozen mid-air, butter-yellow backdrop.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Silk">
+        <a href="img/B1b-bikeride.jpg" target="_blank" rel="noopener"><img src="img/B1b-bikeride.jpg" alt="B1b-bikeride" loading="lazy"></a>
+        <figcaption><span class="tag">Silk</span>Butter-yellow silk slip + sneakers on a pink bicycle, baguette in basket, sunny street, laughing.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Silk">
+        <a href="img/B2b-balloons.jpg" target="_blank" rel="noopener"><img src="img/B2b-balloons.jpg" alt="B2b-balloons" loading="lazy"></a>
+        <figcaption><span class="tag">Silk</span>Pink silk robe, enormous bunch of pink and yellow balloons against clear blue sky, wind.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Silk">
+        <a href="img/B3b-trampoline.jpg" target="_blank" rel="noopener"><img src="img/B3b-trampoline.jpg" alt="B3b-trampoline" loading="lazy"></a>
+        <figcaption><span class="tag">Silk</span>Ivory silk slip frozen mid-bounce above a pink trampoline, blue sky, genuinely laughing.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Silk">
+        <a href="img/B5b-poodle.jpg" target="_blank" rel="noopener"><img src="img/B5b-poodle.jpg" alt="B5b-poodle" loading="lazy"></a>
+        <figcaption><span class="tag">Silk</span>Blush silk slip walking five pastel-dyed poodles on a sunny boulevard, daylight paparazzi flash.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Spaces">
+        <a href="img/C2b-icecream.jpg" target="_blank" rel="noopener"><img src="img/C2b-icecream.jpg" alt="C2b-icecream" loading="lazy"></a>
+        <figcaption><span class="tag">Spaces</span>Pastel parlor where soft-serve swirls are giant sculptural blobs, terrazzo, sky-blue ceiling.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Spaces">
+        <a href="img/C3b-slide.jpg" target="_blank" rel="noopener"><img src="img/C3b-slide.jpg" alt="C3b-slide" loading="lazy"></a>
+        <figcaption><span class="tag">Spaces</span>Butter-yellow spiral slide through a white atrium, one elegant visitor mid-slide, arms up.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Spaces">
+        <a href="img/C4b-vending.jpg" target="_blank" rel="noopener"><img src="img/C4b-vending.jpg" alt="C4b-vending" loading="lazy"></a>
+        <figcaption><span class="tag">Spaces</span>Wall of candy-pink vending machines dispensing plush hearts through chrome flaps, blank panels.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Spaces">
+        <a href="img/C5b-carousel.jpg" target="_blank" rel="noopener"><img src="img/C5b-carousel.jpg" alt="C5b-carousel" loading="lazy"></a>
+        <figcaption><span class="tag">Spaces</span>Carousel at golden hour with horses replaced by giant glossy pink blobs, families in pastel.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Culture">
+        <a href="img/D1b-cake.jpg" target="_blank" rel="noopener"><img src="img/D1b-cake.jpg" alt="D1b-cake" loading="lazy"></a>
+        <figcaption><span class="tag">Culture</span>Five-tier bubblegum birthday cake with a chrome cherry, sky-blue room, confetti mid-air.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Culture">
+        <a href="img/D3b-gummy.jpg" target="_blank" rel="noopener"><img src="img/D3b-gummy.jpg" alt="D3b-gummy" loading="lazy"></a>
+        <figcaption><span class="tag">Culture</span>Macro gummies shaped like the blob sculptures spilling from a plain white candy bag.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Culture">
+        <a href="img/D4b-parade.jpg" target="_blank" rel="noopener"><img src="img/D4b-parade.jpg" alt="D4b-parade" loading="lazy"></a>
+        <figcaption><span class="tag">Culture</span>Colossal pink blob parade balloon floating between buildings, confetti, pastel crowds looking up.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Worlds">
+        <a href="img/E1b-beachball.jpg" target="_blank" rel="noopener"><img src="img/E1b-beachball.jpg" alt="E1b-beachball" loading="lazy"></a>
+        <figcaption><span class="tag">Worlds</span>Colossal pink sphere in shallow turquoise sea like a beach ball, swimmers and umbrellas, aerial.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Worlds">
+        <a href="img/E2b-cloudlips.jpg" target="_blank" rel="noopener"><img src="img/E2b-cloudlips.jpg" alt="E2b-cloudlips" loading="lazy"></a>
+        <figcaption><span class="tag">Worlds</span>Pink cloud shaped like smiling lips over a yellow rapeseed field, one person in white looking up.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Worlds">
+        <a href="img/E3b-milkpool.jpg" target="_blank" rel="noopener"><img src="img/E3b-milkpool.jpg" alt="E3b-milkpool" loading="lazy"></a>
+        <figcaption><span class="tag">Worlds</span>Overhead: woman in pink silk floating in strawberry milk scattered with daisies, calm smile.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Worlds">
+        <a href="img/E4b-plushrobot.jpg" target="_blank" rel="noopener"><img src="img/E4b-plushrobot.jpg" alt="E4b-plushrobot" loading="lazy"></a>
+        <figcaption><span class="tag">Worlds</span>Giant marshmallow-soft plush robot offering a strawberry ice cream cone to a delighted woman in silk.</figcaption>
+      </figure>
+      <figure class="card" data-spoke="Worlds">
+        <a href="img/E5b-doorsky.jpg" target="_blank" rel="noopener"><img src="img/E5b-doorsky.jpg" alt="E5b-doorsky" loading="lazy"></a>
+        <figcaption><span class="tag">Worlds</span>Pink door alone on a grassy hill opening onto a solid wall of blue sky and clouds.</figcaption>
+      </figure>
+</main>
+<footer>Hello Nancy concept board, August 2026. The living prototype lives at <a href="https://nancy-universe.higgsfield.app">nancy-universe.higgsfield.app</a>.</footer>
+<script>
+  const pills = document.querySelectorAll('.pill');
+  pills.forEach(p => p.addEventListener('click', () => {
+    pills.forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    const f = p.dataset.filter;
+    document.querySelectorAll('.card').forEach(c =>
+      c.classList.toggle('hidden', f !== 'all' && c.dataset.spoke !== f));
+  }));
+</script>
+</body>
+</html>
