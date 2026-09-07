@@ -1,9 +1,9 @@
-# LOVE ALL — The Soft Machines
+# LOVE ALL — The match is off
 
 Live exhibition: https://rsquaredboi.github.io/nancy-toybox/tennis-world/
 
-Published September 6, 2026. An independent Nancy concept with three original eight-second Higgsfield installation films, an animated tennis-ball entrance, scroll-driven typography, full-screen film viewing and official Nancy product photography.
+A surreal Nancy tennis club with eleven Higgsfield films, a pull-to-enter entrance, an optional playable 3D court, a film scrubber, and a cinema. The Objects of Affection collection introduces Ace in a moving net cradle and Smash on a chrome ribbon, with switches to the original official product photographs.
 
-The built website is in `tennis-world/`. Editable React source and build instructions are in `_tennis-world-source/`. The original root Toybox board and its images are unchanged.
+The built site is in `tennis-world/`. Editable React source and build instructions are in `_tennis-world-source/`. The original Toybox board at the repository root is separate.
 
-The exhibition is a creative prototype. All shopping links go to the existing Hello Nancy store. It is not an actual Gentle Monster collaboration.
+This is an independent Nancy creative prototype, not a Gentle Monster collaboration. Shopping links lead to the existing Hello Nancy store. Campaign illustrations are not pixel-perfect catalog photography.

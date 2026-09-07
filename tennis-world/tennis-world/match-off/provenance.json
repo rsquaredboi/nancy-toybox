@@ -1,0 +1,40 @@
+{
+  "source": "Higgsfield",
+  "curatedRun": "nancy-tennis-world/asset-lab/run.json",
+  "selectedStills": [
+    62,
+    73,
+    77,
+    83,
+    84,
+    105
+  ],
+  "selectedFilms": [
+    85,
+    87,
+    88,
+    90,
+    94,
+    95,
+    96,
+    97,
+    98,
+    103,
+    104
+  ],
+  "additionalCourtPlate": {
+    "job_id": "dd69960e-76d3-4ec9-a61b-623afb89c339",
+    "model": "nano_banana_2",
+    "reference_job": "84cbe994-4208-49e6-b1b5-b1bb7338792e",
+    "original_url": "https://d8j0ntlcm91z4.cloudfront.net/user_38T4RlRN8cgZrEnF4mWQOOHoUz7/hf_20260906_204231_dd69960e-76d3-4ec9-a61b-623afb89c339.png"
+  },
+  "interactiveNet": "Three.js procedural geometry. Authored catch with spring settling.",
+  "productImagery": "Higgsfield campaign staging for Ace and Smash, with original official photographs available through the Product view. Campaign art is not a pixel-perfect catalog packshot.",
+  "objectsOfAffection": {
+    "source": "Higgsfield",
+    "film103": "6f82fda9-78d3-43fa-8da2-ad2d65854138",
+    "film104": "bf29886e-5eb0-46e3-a95e-24abd4eede02",
+    "still105": "4862db18-6fa7-4459-8223-7bd0bbd46bb0",
+    "motion": "Held endings with replay controls."
+  }
+}

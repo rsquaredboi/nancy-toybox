@@ -26,6 +26,7 @@ const pagesAssets: Plugin = {
       'fonts/ESRebondGrotesque-Semibold.woff',
       'fonts/Fraunces-Regular.woff',
       'tennis-world/soft-machines',
+      'tennis-world/match-off',
       'tennis-world/ace-official.png',
       'tennis-world/smash-official.png',
       'tennis-world/embrace.png',
