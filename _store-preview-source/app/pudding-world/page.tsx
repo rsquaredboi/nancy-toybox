@@ -609,6 +609,15 @@ export default function PuddingWorld({ externalPaused = false }: { externalPause
   const audio = useRef<AudioContext | null>(null);
   const page = useRef<HTMLDivElement>(null);
   useEffect(() => {
+    // A lazy-loaded campaign mounts after the browser's initial anchor lookup.
+    const hash = window.location.hash;
+    if (!['#top', '#the-pudding', '#the-salon', '#for-later'].includes(hash)) return;
+    const frame = requestAnimationFrame(() => {
+      document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: 'instant', block: 'start' });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, []);
+  useEffect(() => {
     const m = window.matchMedia('(prefers-reduced-motion: reduce)');
     const update = () => setReduced(m.matches);
     update();
